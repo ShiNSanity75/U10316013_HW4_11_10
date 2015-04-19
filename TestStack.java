@@ -1,3 +1,23 @@
+import java.util.Scanner;
+
+public class TestStack {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+    
+		MyStack hahaStack = new MyStack();
+    
+		System.out.println("Please enter a string with five character : ");
+		
+		for (int i = 0; i < 5; i++) {
+			hahaStack.push(input.nextLine());
+		}
+		
+		while (!hahaStack.isEmpty()) {
+			System.out.println(hahaStack.pop());
+		}
+	}
+}
+
 class MyStack extends java.util.ArrayList<Object> {
 
 	//is the stack empty?
