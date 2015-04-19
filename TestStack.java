@@ -2,18 +2,22 @@ import java.util.Scanner;
 
 public class TestStack {
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);//create a scanner
     
-		MyStack hahaStack = new MyStack();
+		MyStack hahaStack = new MyStack();//new MyStack
     
+		//point user to enter a string
 		System.out.println("Please enter a string with five character : ");
 		
+		//add a new element to the top of the stack
 		for (int i = 0; i < 5; i++) {
 			hahaStack.push(input.nextLine());
-		}
+		}//end for loop
+    
+		System.out.println("You enter " + hahaStack.getSize() + " character" + "\nThe opposite string is: ");
 		
 		while (!hahaStack.isEmpty()) {
-			System.out.println(hahaStack.pop());
+			System.out.println(hahaStack.pop());//return and remove the top element in the stack
 		}
 	}
 }
