@@ -1,3 +1,8 @@
+/**
+ * ID:U10316013
+ * NAME:HSIAO,TZU-CHI
+ * EX:11.10
+ */
 import java.util.Scanner;
 
 public class TestStack {
@@ -7,14 +12,14 @@ public class TestStack {
 		MyStack hahaStack = new MyStack();//new MyStack
     
 		//point user to enter a string
-		System.out.println("Please enter a string with five character : ");
+		System.out.println("Please enter five strings : ");
 		
 		//add a new element to the top of the stack
 		for (int i = 0; i < 5; i++) {
 			hahaStack.push(input.nextLine());
 		}//end for loop
     
-		System.out.println("You enter " + hahaStack.getSize() + " character" + "\nThe opposite string is: ");
+		System.out.println("You enter " + hahaStack.getSize() + " strings" + "\nThe opposite strings are: ");
 		
 		while (!hahaStack.isEmpty()) {
 			System.out.println(hahaStack.pop());//return and remove the top element in the stack
